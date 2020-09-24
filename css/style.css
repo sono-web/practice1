@@ -342,11 +342,11 @@ li {
 
 .faq__q {
   font-size: 1.4rem;
-  min-height: 93px;
   background-color: #F2F2F2;
   line-height: 1.85;
   border-bottom: 1px solid #E5E5E5;
   padding: 25px 35px;
+  display: none;
 }
 
 .blog-wrapper {
@@ -422,7 +422,7 @@ li {
   max-width: 322px;
   height: 407px;
   border: 1px solid #DDDDDD;
-  margin-right: 56px;
+  margin-right: 54px;
   border-radius: 8px;
 }
 
@@ -630,7 +630,7 @@ textarea {
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 80%;
     height: 100vh;
     background-color: #fff;
   }
@@ -752,7 +752,7 @@ textarea {
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 80%;
     height: 100vh;
     background-color: #fff;
   }
