@@ -1,18 +1,11 @@
 
- // faq アコ－ディオン
+
+// f&q アコーディオン
 $(function(){
-
-    $('.faq__q').hide();
-    
-    $( '.syncer-acdn' ).click( function(){
-
-        // [data-target]の属性値を代入する
-        var target = $(this).data( 'target' );
-
-        // [target]と同じ名前のIDを持つ要素に[slideToggle()]を実行する
-        $( '#' + target ).slideToggle(300);
-    });
-}); // faq アコ－ディオン
+  $(".faq__f").on("click", function() {
+  $(this).next().slideToggle();
+  });
+  });// f&q アコーディオン
 
 
 
@@ -63,14 +56,18 @@ $(document).ready(function () {
   });// 必須を入力しないと送信ボタン押せないようにする記述
 
 
+// ハンバーガーメニュー
+  $('.burger-btn').on('click',function(){
+    $('.header__nav').fadeToggle(300);
+    $(this).toggleClass('cross');
+    // $('body').toggleClass('noscroll');
+  });// ハンバーガーメニュー
 
-  // ハンバーガーメニュー
-$('.burger-btn').on('click',function(){
-  $('.header__nav').fadeToggle(300);
-  $(this).toggleClass('cross');
-  // $('body').toggleClass('noscroll');
-
-});// ハンバーガーメニュー
+  // ナビゲーションをクリックしたらスムーススクロールしてナビゲーションが閉じる
+  $('.header__list a').on('click', function(){
+    $('.header__nav').fadeOut(300);
+    $('.burger-btn').removeClass('cross');　// ×が消えハンバーガーメニーに戻る
+});
 
 
 
